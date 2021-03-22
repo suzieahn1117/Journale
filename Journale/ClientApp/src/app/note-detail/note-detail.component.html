@@ -1,5 +1,5 @@
 <div>
-  <textarea id="note"></textarea>
-  <button>Save</button>
-  <button>Delete</button>
+  <textarea [(ngModel)]="note.content"></textarea>
+  <button (click)="SaveNote()">Save</button>
+  <button (click)="DeleteNote()">Delete</button>
 </div>

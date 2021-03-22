@@ -30,7 +30,7 @@ import { NoteCreateComponent } from './note-create/note-create.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'note-detail', component: NoteDetailComponent },
+      { path: 'note-detail/:id', component: NoteDetailComponent },
       { path: 'note-create', component: NoteCreateComponent }
     ])
   ],
