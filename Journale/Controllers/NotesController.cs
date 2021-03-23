@@ -44,15 +44,12 @@ namespace Journale.Controllers
                             Note note = new Note();
                             note.Content = reader["Content"].ToString();
                             note.Id = reader["Id"].ToString();
-                            note.CreatedDate = DateTime.Parse(reader["CreatedDate"].ToString());
+                            note.CreatedDate = reader["createdDate"].ToString();
                             notes.Add(note);
                         }
                     }
-
-
                 }
                 return notes;
-
         }
 
         // GET api/<NotesController>/5
